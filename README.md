@@ -31,5 +31,6 @@ Entity Framework Core
 SQLite	
 Bootstrap
 C#	
+
 Kullanıcı adları: admin, viewer
 şifre: 1234
