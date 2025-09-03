@@ -1,0 +1,20 @@
+﻿
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
+
+<div class="text-center">
+    
+    <img src="~/images/image.png" alt="Ana Sayfa Görseli" style="max-width: 400px; margin-top:20px;" />
+    <h1 class="display-4">📦 Stok Takip Sistemi 📦</h1>
+    <p class="lead">Ürünlerinizi kolayca takip edin, kritik stok durumlarını görün ve yönetin.</p>
+    <a class="btn btn-primary btn-lg mt-3" asp-page="/Products/Index">Ürün Listesine Git</a>
+</div>

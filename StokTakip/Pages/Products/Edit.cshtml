@@ -1,0 +1,37 @@
+﻿@page "{id:int}"
+@model StokTakip.Pages.Products.EditModel
+
+<h2>Ürün Güncelle</h2>
+
+<form method="post" novalidate>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" asp-for="Product.Id" />
+
+    <div class="mb-3">
+        <label asp-for="Product.Name" class="form-label"></label>
+        <input asp-for="Product.Name" class="form-control" />
+        <span asp-validation-for="Product.Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Product.Stock" class="form-label"></label>
+        <input asp-for="Product.Stock" class="form-control" />
+        <span asp-validation-for="Product.Stock" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Product.CriticalLevel" class="form-label"></label>
+        <input asp-for="Product.CriticalLevel" class="form-control" />
+        <span asp-validation-for="Product.CriticalLevel" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+    <a asp-page="Index" class="btn btn-outline-secondary">İptal</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
