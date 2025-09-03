@@ -14,8 +14,8 @@ Kritik Stok Uyarıları:
 Stok seviyesi belirlenen kritik değerlerin altına düştüğünde uyarı
 
 Kullanıcı Rolleri:
-Admin: Tüm yetkilere sahip kullanıcı şifre 1234
-Viewer: Sınırlı yetkilere sahip kullanıcı şifre 1234
+Admin: Tüm yetkilere sahip kullanıcı 
+Viewer: Sınırlı yetkilere sahip kullanıcı 
 
 Raporlama:
 Stok durumu raporu
@@ -31,8 +31,5 @@ Entity Framework Core
 SQLite	
 Bootstrap
 C#	
-
-
-
 Kullanıcı adları: admin, viewer
 şifre: 1234
